@@ -1,0 +1,266 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tercera Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasapp3.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="acciones" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/ceniza.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-add-back-btn="Regresar" data-back-btn-theme="b">
+    <h1>Informacion del popocateptlk </h1>
+   </div>
+   <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+   <h1>ZONAS DE RIESGO</h1>
+   <div>
+   <p>Estas son las zonas de riesgo:
+  <!-- Start WOWSlider.com -->
+<iframe src="index1.html" style="width:960px;height:360px;max-width:150%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+
+   <br>
+   </div>
+   <div>
+   <img src="imagenes/daniel.jpg" width="50%" height="50%"></div>
+   </div>
+   </div>
+   
+   <div>
+   <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>UBICACION </h2>
+   <p>Se muestra la ubicacion</p>
+   </a>
+   </li>
+    <li class="ui-first-child ui-last-child">
+   <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>TAMAÑO </h2>
+   <p>Se muestra el tamaño deñ volcan</p>
+   </a>
+   </li>
+     <li class="ui-first-child ui-last-child">
+   <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>ANTIGUEDAD </h2>
+   <p>Muestra la antiguedad</p>
+   </a>
+   </li>
+      <li class="ui-first-child ui-last-child">
+   <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>HISTORIA O LEYENDA</h2>
+   <p>Muestra una historia o leyenda</p>
+   </a>
+   </li>
+       <li class="ui-first-child ui-last-child">
+   <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>ACTIVIDAD VOLCANICA</h2>
+   <p>Muestra la actividad volcanica</p>
+   </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>MONITOREO</h2>
+   <p>Muestra el monitoreo</p>
+   </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>MEDIDAS PREVENTIVAS</h2>
+   <p>Muestra las medidas preventivas en cazo de ceniza o erupcion</p>
+   </a>
+   </li>
+   </ul>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+   <img src="imagenes/persona_azul.png" width="46" height="46">
+   </div>
+    <div>
+    <h4>Aplicacion Tres</h4>
+    <h4>Daniel Suárez González</h4>
+    </div>
+    </div>
+    </div>
+    
+     <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>UBICACION</h1>
+      </div>
+       <div data-role="content" align="center">
+       <div>
+       <img src="imagenes/pp2.jpg" width="400" height="500">
+       <p><center> El popocatepetl se encuentra en los limites del estado de mexico morelos y puebla es considerado un estratovolcan con una petrologia hiperstena-andesita con 16 erupciones registradas, es el volcán mas alto de la republica mexicana.  </center></p>
+       </div>
+       </div>
+       <div data-role="footer" data-theme="a" data-position="fixed">
+       <h4>Aplicacion Tres DSG</h4>
+        </div>
+         </div>
+          </div>
+ 
+           <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>TAMAÑO</h1>
+      </div>
+       <div data-role="content" align="center">
+       <div>
+       <img src="imagenes/pp1.jpg" width="400" height="500">
+       <p><center>  La altura oficial es de 5,452 msnmm. <br>
+Sin embargo actualmente esa altura está cambiando poco a poco ya que el volcán a estado teniendo actividad volcánica. 
+  </center></p>
+       </div>
+       </div>
+       <div data-role="footer" data-theme="a" data-position="fixed">
+       <h4>Aplicacion Tres DSG</h4>
+        </div>
+         </div>
+          </div>
+          
+                <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>ANTIGUEDAD</h1>
+      </div>
+       <div data-role="content" align="center">
+       <div>
+       <p><center>  El Popocatépetl surgió a finales del Cenozoico, en el plioceno por lo que aproximadamente tiene 5 millones de años de edad. En conjunto con el Iztaccíhuatl forman una "asociación volcánica o sistema binario volcánico".
+  </center></p>
+    <img src="imagenes/pp3.jpg" width="400" height="500">
+       </div>
+       </div>
+       <div data-role="footer" data-theme="a" data-position="fixed">
+       <h4>Aplicacion Tres DSG</h4>
+        </div>
+         </div>
+          </div>
+          
+             <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>HISTORIA Y/O LEYENDA</h1>
+      </div>
+       <div data-role="content" align="center">
+       <div>
+       <h2><center>La Leyenda de Popocatépetl e Iztaccíhuatl</center></h2>
+       <img src="imagenes/pp4.jpg" width="400" height="500">
+       <p><center> La vista que engalana a la ciudad más grande del mundo: la Ciudad de México, está realzada por la majestuosidad de dos de los volcanes más altos del hemisferio, se trata del Popocatépetl y del Iztaccíhuatl.
+
+La presencia milenaria de estos enormes volcanes ha sido de gran importancia en las diferentes sociedades que los han admirado y venerado, siendo fuente de inspiración de múltiples leyendas sobre su origen y creación. Entre ellas las más conocidas son dos que a continuación relataremos.
+
+Hace ya miles de años, cuando el Imperio Azteca estaba en su esplendor y dominaba el Valle de México, como práctica común sometían a los pueblos vecinos, requiriéndoles un tributo obligatorio. Fue entonces cuando el cacique de los Tlaxcaltecas, acérrimos enemigos de los Aztecas, cansado de esta terrible opresión, decidió luchar por la libertad de su pueblo.
+
+El cacique tenía una hija, llamada Iztaccíhuatl, era la princesa más bella y depositó su amor en el joven Popocatépetl, uno de los más apuestos guerreros de su pueblo.
+
+Ambos se profesaban un inmenso amor, por lo que antes de partir a la guerra, Popocatépetl pidió al cacique la mano de la princesa Iztaccíhuatl. El padre accedió gustoso y prometió recibirlo con una gran celebración para darle la mano de su hija si regresaba victorioso de la batalla.
+
+El valiente guerrero aceptó, se preparó para partir y guardó en su corazón la promesa de que la princesa lo esperaría para consumar su amor.
+
+Al poco tiempo, un rival de amores de Popocatépetl, celoso del amor de ambos se profesaban, le dijo a la princesa Iztaccíhuatl que su amado había muerto durante el combate.
+
+Abatida por la tristeza y sin saber que todo era mentira, la princesa murió.
+
+Tiempo después, Popocatépetl regresó victorioso a su pueblo, con la esperanza de ver a su amada. A su llegada, recibió la terrible noticia sobre el fallecimiento de la princesa Iztaccíhuatl.
+
+Entristecido con la noticia, vagó por las calles durante varios días y noches, hasta que decidió hacer algo para honrar su amor y que el recuerdo de la princesa permaneciera en la memoria de los pueblos.
+
+Mandó construir una gran tumba ante el Sol, amontonando 10 cerros para formar una enorme montaña.
+Tomó entre sus brazos el cuerpo de su princesa, lo llevó a la cima y lo recostó inerte sobre la gran montaña.  El joven guerrero le dio un beso póstumo, tomó una antorcha humeante y se arrodilló frente a su amada, para velar así, su sueño eterno.
+Desde aquel entonces permanecen juntos, uno frente a otro. Con el tiempo la nieve cubrió sus cuerpos, convirtiéndose en dos enormes volcanes que seguirán así hasta el final del mundo.
+
+La leyenda añade, que cuando el guerrero Popocatépetl se acuerda de su amada, su corazón que guarda el fuego de la pasión eterna, tiembla y su antorcha echa humo.   Por ello hasta hoy en día, el volcán Popocatépetl continúa arrojando fumarolas.
+  </center></p>
+    
+       </div>
+       </div>
+       <div data-role="footer" data-theme="a" data-position="fixed">
+       <h4>Aplicacion Tres DSG</h4>
+        </div>
+         </div>
+          </div>
+          
+            <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>ACTIVIDAD VOLCANICA</h1>
+      </div>
+       <div data-role="content" align="center">
+       <div>
+       <h3>El Popocatépetl emite columna de gas y ceniza de 1.5 kilómetros</h3>
+       <img src="imagenes/pp6.jpg" width="400" height="500">
+       <h3>Reportan cinco explosiones de baja intensidad en el Popocatépetl</h3>
+       <img src="imagenes/pp5.jpg" width="400" height="500">
+       <h3>El Popocatépetl emite columna de ceniza de dos kilómetros</h3>
+       <img src="imagenes/pp7.jpg" width="400" height="500">
+    
+       </div>
+       </div>
+       <div data-role="footer" data-theme="a" data-position="fixed">
+       <h4>Aplicacion Tres DSG</h4>
+        </div>
+         </div>
+          </div>
+          
+           <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>MONITOREO</h1>
+      </div>
+       <div data-role="content" align="center">
+       <div>
+       <h3>El Popocatépetl emite columna de gas y ceniza de 1.5 kilómetros</h3>
+       <img src="imagenes/pp8.png" width="400" height="500">
+       </div>
+       </div>
+       <div data-role="footer" data-theme="a" data-position="fixed">
+       <h4>Aplicacion Tres DSG</h4>
+        </div>
+         </div>
+          </div>
+          
+           <div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>MEDIDAS PREVENTIVAS</h1>
+      </div>
+       <div data-role="content" align="center">
+       <div>
+       <h3>Medidas preventivas en caso de erupcion o caida de ceniza</h3>
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','imagenes/ceniza.jpg',1)"><img src="imagenes/pp9.png" width="500" height="500" id="Image11"></a> </div>
+       </div>
+       <div data-role="footer" data-theme="a" data-position="fixed">
+       <h4>Aplicacion Tres DSG</h4>
+        </div>
+         </div>
+          </div>
+          
+</body>
+</html>
